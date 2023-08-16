@@ -1,4 +1,4 @@
-module github.com/natansa/desafio-client-server
+module github.com/natansa/fullcycle-go-desafio-client-server
 
 go 1.20
 

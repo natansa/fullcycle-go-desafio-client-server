@@ -60,7 +60,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
-	db, err := gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("desafio.db"), &gorm.Config{})
 	if err != nil {
 		log.Println(err)
 	}

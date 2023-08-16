@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  sqlite3:
+    container_name: sqlite3_container
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./db/:/root/db/
+    ports:
+      - '9000:9000'
+    restart: unless-stopped
